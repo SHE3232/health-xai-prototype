@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>条件 B 后测</title>
+    <link rel="icon" href="./favicon-ball.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="single-stimulus-shell survey-shell-page" data-condition="b" data-page="post-survey">
+      <div class="screen cover-screen survey-screen">
+        <div class="avatar-lockup">
+          <div class="avatar-glow"></div>
+          <div class="avatar-core">
+            <span class="avatar-mark">V</span>
+          </div>
+        </div>
+        <p class="screen-tag" id="survey-stage-tag">Round 已完成</p>
+        <h4 id="survey-stage-title">请完成本轮后测</h4>
+        <p class="screen-copy" id="survey-stage-copy">请先打开本轮后测面板。</p>
+        <p class="intro-meta" id="survey-stage-status">当前状态：请先打开本轮后测面板。</p>
+
+        <div class="note-card survey-launch-card">
+          <strong id="survey-launch-title">本轮后测问卷</strong>
+          <p id="survey-launch-copy">
+            点击下方按钮后，系统会在当前页面内展开本轮问卷面板。提交成功后，关闭面板并返回本页继续。
+          </p>
+        </div>
+
+        <div class="cta-stack">
+          <button class="ghost-btn action-btn" id="open-survey-btn" type="button">打开本轮后测面板</button>
+          <button class="primary-btn action-btn is-disabled" id="survey-stage-action" type="button">
+            我已提交本轮后测，进入下一轮
+          </button>
+          <div class="ghost-btn is-active survey-pill" id="condition-pill">顺序加载中</div>
+        </div>
+      </div>
+    </main>
+    <script src="./prototype-scenarios.js"></script>
+    <script src="./complete-survey.js"></script>
+  </body>
+</html>

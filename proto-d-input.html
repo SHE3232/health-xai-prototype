@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>条件 D 输入页</title>
+    <link rel="icon" href="./favicon-ball.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="single-stimulus-shell" data-condition="d" data-stage="input">
+      <div class="screen form-screen">
+        <div class="status-bar">
+          <span>9:42</span>
+          <span>5G</span>
+        </div>
+        <div class="screen-head">
+          <p class="screen-tag">每日检查</p>
+          <h4>你今天状态怎么样？</h4>
+        </div>
+        <div class="form-card">
+          <label>昨晚睡眠</label>
+          <div class="choice-row" data-field="sleep">
+            <button class="chip choice-btn active" type="button" aria-pressed="true" data-value="short">5.5小时</button>
+            <button class="chip choice-btn" type="button" aria-pressed="false" data-value="normal">7小时</button>
+            <button class="chip choice-btn" type="button" aria-pressed="false" data-value="long">8小时以上</button>
+          </div>
+        </div>
+        <div class="form-card">
+          <label>早餐情况</label>
+          <div class="choice-row" data-field="breakfast">
+            <button class="chip choice-btn active" type="button" aria-pressed="true" data-value="sugary">只喝含糖饮料</button>
+            <button class="chip choice-btn" type="button" aria-pressed="false" data-value="balanced">均衡早餐</button>
+            <button class="chip choice-btn" type="button" aria-pressed="false" data-value="skipped">未吃早餐</button>
+          </div>
+        </div>
+        <div class="form-card">
+          <label for="exercise-range-d">过去3天的运动</label>
+          <div class="range-control">
+            <input
+              class="range-input"
+              id="exercise-range-d"
+              type="range"
+              min="0"
+              max="4"
+              step="1"
+              value="1"
+              data-range-output="exercise-output-d"
+            />
+          </div>
+          <small class="range-output" id="exercise-output-d">1次，低于推荐水平</small>
+        </div>
+        <div class="bottom-action">
+          <a class="primary-btn action-btn scenario-next-link" href="./proto-d-task.html?scene=scene-1">查看建议</a>
+        </div>
+      </div>
+    </main>
+    <script src="./prototype-scenarios.js"></script>
+    <script src="./input-controls.js"></script>
+  </body>
+</html>
