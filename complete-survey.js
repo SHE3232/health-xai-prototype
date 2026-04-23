@@ -71,7 +71,10 @@
             <strong class="survey-modal__title" id="survey-modal-title">问卷面板</strong>
             <p class="survey-modal__subtitle" id="survey-modal-subtitle">请在当前页面内完成问卷。提交成功后关闭面板，并返回本页继续实验。</p>
           </div>
-          <button class="survey-modal__close" type="button" aria-label="关闭问卷面板">&times;</button>
+          <div class="survey-modal__close-wrap">
+            <span class="survey-modal__close-tip">提交后点这里关闭</span>
+            <button class="survey-modal__close" type="button" aria-label="关闭问卷面板">&times;</button>
+          </div>
         </div>
         <div class="survey-modal__body">
           <iframe class="survey-modal__frame" title="问卷面板" loading="eager" referrerpolicy="strict-origin-when-cross-origin"></iframe>
@@ -200,7 +203,7 @@
       launchTitleEl.textContent = "本轮后测问卷";
     }
     if (launchCopyEl) {
-      launchCopyEl.textContent = "先点击下方按钮打开本轮后测，提交成功后，再点击继续进入下一步。";
+      launchCopyEl.textContent = "完成后测后，再继续下一步。";
     }
 
     setFallbackUrl(postSurveyUrl);
@@ -236,7 +239,7 @@
       launchTitleEl.textContent = "Final 问卷";
     }
     if (launchCopyEl) {
-      launchCopyEl.textContent = "先点击下方按钮打开 Final 问卷，提交成功后，再点击下方按钮结束实验。";
+      launchCopyEl.textContent = "完成 Final 后，再结束实验。";
     }
 
     setFallbackUrl(finalSurveyUrl);

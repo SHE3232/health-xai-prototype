@@ -1174,13 +1174,13 @@ body {
 .survey-pill {
   display: block;
   min-height: auto;
-  padding: 14px 16px 14px 18px;
+  padding: 6px 8px 0;
   white-space: normal;
   line-height: 1.6;
-  text-align: left;
-  color: var(--muted);
-  background: rgba(255, 255, 255, 0.62);
-  border: 1px solid rgba(23, 53, 51, 0.08);
+  text-align: center;
+  color: #55726e;
+  background: transparent;
+  border: 0;
   box-shadow: none;
   pointer-events: none;
   cursor: default;
@@ -1189,11 +1189,25 @@ body {
 
 .survey-pill.ghost-btn,
 .survey-pill.ghost-btn.is-active {
-  justify-content: flex-start;
-  align-items: flex-start;
-  color: var(--muted);
-  background: rgba(255, 255, 255, 0.62);
-  border: 1px solid rgba(23, 53, 51, 0.08);
+  justify-content: center;
+  align-items: center;
+  color: #55726e;
+  background: transparent;
+  border: 0;
+  font-weight: 700;
+  box-shadow: none;
+}
+
+.cover-screen .cta-stack > .ghost-btn.action-btn:not(#open-survey-btn):not(.is-disabled) {
+  justify-content: center;
+  align-items: center;
+  padding: 6px 8px 0;
+  color: #55726e;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  cursor: default;
+  pointer-events: none;
   font-weight: 700;
 }
 
@@ -1323,9 +1337,29 @@ body {
   line-height: 1.6;
 }
 
+.survey-modal__close-wrap,
 .survey-modal__close,
 .survey-modal__fallback {
   flex-shrink: 0;
+}
+
+.survey-modal__close-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.survey-modal__close-tip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: rgba(15, 118, 110, 0.1);
+  color: var(--teal);
+  font-size: 12px;
+  font-weight: 800;
+  white-space: nowrap;
 }
 
 .survey-modal__close {
@@ -1489,6 +1523,15 @@ body {
   .survey-modal__footer {
     display: grid;
     justify-content: stretch;
+  }
+
+  .survey-modal__close-wrap {
+    justify-content: flex-end;
+  }
+
+  .survey-modal__close-tip {
+    font-size: 11px;
+    padding: 4px 8px;
   }
 
   .survey-modal__frame {

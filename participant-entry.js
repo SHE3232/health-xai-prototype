@@ -67,7 +67,10 @@
             <strong class="survey-modal__title" id="survey-modal-title">前测问卷</strong>
             <p class="survey-modal__subtitle" id="survey-modal-subtitle">请在当前页面内完成前测。提交成功后关闭面板，并返回本页继续实验。</p>
           </div>
-          <button class="survey-modal__close" type="button" aria-label="关闭问卷面板">&times;</button>
+          <div class="survey-modal__close-wrap">
+            <span class="survey-modal__close-tip">提交后点这里关闭</span>
+            <button class="survey-modal__close" type="button" aria-label="关闭问卷面板">&times;</button>
+          </div>
         </div>
         <div class="survey-modal__body">
           <iframe class="survey-modal__frame" title="前测问卷面板" loading="eager" referrerpolicy="strict-origin-when-cross-origin"></iframe>
