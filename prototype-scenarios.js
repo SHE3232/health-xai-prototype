@@ -48,14 +48,14 @@
     g4: ["d", "a", "b", "c"],
   };
   const SURVEY_URLS = {
-    pretest: "https://www.credamo.com/answer.html#/s/qaMfEvano/",
+    pretest: "https://www.credamo.com/answer.html#/s/iEBFNvano/",
     posts: {
-      a: "https://www.credamo.com/answer.html#/s/MfUrE3ano/",
-      b: "https://www.credamo.com/answer.html#/s/MFRZzmano/",
-      c: "https://www.credamo.com/answer.html#/s/NjQBjiano/",
-      d: "https://www.credamo.com/answer.html#/s/vIBnueano/",
+      a: "https://www.credamo.com/answer.html#/s/eUv6Nfano/",
+      b: "https://www.credamo.com/answer.html#/s/UB3eUfano/",
+      c: "https://www.credamo.com/answer.html#/s/22qqYrano/",
+      d: "https://www.credamo.com/answer.html#/s/2yIbuyano/",
     },
-    final: "https://www.credamo.com/answer.html#/s/YZJbUjano/",
+    final: "https://www.credamo.com/answer.html#/s/nmqIFzano/",
   };
 
   const normalizeCondition = (value) => {
