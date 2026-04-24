@@ -1198,19 +1198,6 @@ body {
   box-shadow: none;
 }
 
-.cover-screen .cta-stack > .ghost-btn.action-btn:not(#open-survey-btn):not(.is-disabled) {
-  justify-content: center;
-  align-items: center;
-  padding: 6px 8px 0;
-  color: #55726e;
-  background: transparent;
-  border: 0;
-  box-shadow: none;
-  cursor: default;
-  pointer-events: none;
-  font-weight: 700;
-}
-
 .survey-launch-card {
   margin: 0 auto 12px;
   width: 100%;
